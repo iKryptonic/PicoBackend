@@ -2,6 +2,7 @@ package edu.wssu.pico;
 
 import java.io.IOException;
 
+import edu.wssu.pico.utils.DatabaseManager;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -41,14 +42,6 @@ public class AdminView extends HttpServlet {
         } else {
         	response.sendRedirect("loginview");
         }
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
 	}
 
 }
