@@ -1,0 +1,37 @@
+<web-app>  
+
+	<servlet>  
+		<servlet-name>loginview</servlet-name>  
+		<servlet-class>edu.wssu.pico.LoginView</servlet-class>  
+	</servlet>  
+	  <servlet>  
+		<servlet-name>adminview</servlet-name>  
+		<servlet-class>edu.wssu.pico.AdminView</servlet-class>  
+	</servlet>  
+	<servlet>  
+		<servlet-name>usersubmission</servlet-name>  
+		<servlet-class>edu.wssu.pico.UserSubmission</servlet-class>  
+	</servlet>  
+	<servlet>  
+		<servlet-name>submissionsuccess</servlet-name>  
+		<servlet-class>edu.wssu.pico.SubmissionSuccess</servlet-class>  
+	</servlet>  
+	<servlet-mapping>  
+		<servlet-name>loginview</servlet-name>  
+		<url-pattern>/loginview</url-pattern>  
+	</servlet-mapping> 
+	<servlet-mapping>  
+		<servlet-name>adminview</servlet-name>  
+		<url-pattern>/adminview</url-pattern>  
+	</servlet-mapping>  
+	<servlet-mapping>  
+		<servlet-name>usersubmission</servlet-name>  
+		<url-pattern>/index</url-pattern>  
+	</servlet-mapping>  
+	<servlet-mapping>  
+		<servlet-name>submissionsuccess</servlet-name>  
+		<url-pattern>/submissionsuccess</url-pattern>  
+	</servlet-mapping>  
+  
+  
+</web-app>  
