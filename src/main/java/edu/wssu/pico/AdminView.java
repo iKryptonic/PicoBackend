@@ -35,7 +35,6 @@ public class AdminView extends HttpServlet {
         String sessionKey = session.getId();
         boolean isAdmin = dbm.verifyAdminSession(sessionKey);
         
-        
         if(isAdmin) {
         	RequestDispatcher view = request.getRequestDispatcher("AdminView.jsp");
     		view.forward(request, response);

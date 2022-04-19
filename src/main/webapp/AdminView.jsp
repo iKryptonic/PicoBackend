@@ -31,25 +31,9 @@
 		    <div class="container white">
 		        <h3 class="center header">All user submissions</h3>
 				<div class="col s12">
-					<div class="row">
-					  		<div class="row">
-								<div class="col s12">University:
-								  <div class="input-field inline">
-										<input name="universityName" type="text" id="autocomplete-input" class="autocomplete">
-										<label for="autocomplete-input">University Name</label>
-									</div>
-								<button style="margin-left: 5%" value="anyvalue" class="btn waves-effect waves-light" type="submit" name="action">Submit
-									<i class="material-icons right">send</i>
-							  	</button>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- University Data Retainer -->
+					<!-- Data Retainer -->
 					<div>
-						<ul class="collection with-header">
-							<li class="collection-header"><h4>Events around ${universityName}</h4></li>
-							
+						<ul class="collection">
 							<% /* Event[] allEvents = (Event[]) request.getAttribute("Events");
 						        int pointer = 0;
 					            outNewLine("<tr>", out);
