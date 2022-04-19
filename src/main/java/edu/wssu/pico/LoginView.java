@@ -73,7 +73,7 @@ public class LoginView extends HttpServlet {
         
         if(adminID != null) {
         	// Valid credentials
-        	
+        	// Do not submit if pstmt is outdated
         	// Submit session to DB
         	try {
 				PreparedStatement pstmt = dbm.newSQL.conn.prepareStatement("INSERT INTO `sessions` VALUES (?, NOW(), ?) ON DUPLICATE KEY UPDATE session_start=NOW(),session_key=?");

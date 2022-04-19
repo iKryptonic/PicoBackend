@@ -29,28 +29,28 @@
 	</head>
 	
 	<body>
-		    <div class="container white">
-		        <h3 class="center header">All user submissions</h3>
-				<div class="col s12">
-					<!-- Data Retainer -->
-					<div>
-						<ul class="collection">
-							<%  UserSubmission[] allSubmissions = (UserSubmission[]) request.getAttribute("Submissions");
-						        int pointer = 0;
-					            outNewLine("<tr>", out);
-					            if(allSubmissions != null)
-					            {
-							        for(UserSubmission e : allSubmissions)
-							        {
-							            if(e != null)
-							           		outNewLine("<li class=\"collection-item\"><div>" + e.getFirstName() + " " + e.getLastName() + " - " + e.getEmail() + "<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"adminview?submissionID=" + e.getID() + "\" class=\"secondary-content\"><i class=\"material-icons\">send</i></a></div></li>", out);
-								  	}
-					            }
-						  	%>
-						</ul>
-					</div>
+	    <div class="container white">
+	        <h3 class="center header">All user submissions</h3>
+			<div class="col s12">
+				<!-- Data Retainer -->
+				<div>
+					<ul class="collection">
+						<%  UserSubmission[] allSubmissions = (UserSubmission[]) request.getAttribute("Submissions");
+					        int pointer = 0;
+				            outNewLine("<tr>", out);
+				            if(allSubmissions != null)
+				            {
+						        for(UserSubmission e : allSubmissions)
+						        {
+						            if(e != null)
+						           		outNewLine("<li class=\"collection-item\"><div>" + e.getFirstName() + " " + e.getLastName() + " - " + e.getEmail() + "<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"adminview?submissionID=" + e.getID() + "\" class=\"secondary-content\"><i class=\"material-icons\">send</i></a></div></li>", out);
+							  	}
+				            }
+					  	%>
+					</ul>
 				</div>
-		    </div>
+			</div>
+	    </div>
 	</body>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="resources/js/materialize.js"></script>

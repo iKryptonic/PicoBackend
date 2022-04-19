@@ -31,7 +31,7 @@ public class AdminView extends HttpServlet {
     
     public class UserSubmission {
     	
-    	protected int submissionID = -1;
+    	protected int submissionID = -1; 
     	protected String firstName = null;
     	protected String lastName = null;
     	protected String email = null;
@@ -189,6 +189,6 @@ public class AdminView extends HttpServlet {
 			break;
 		}
 		request.removeAttribute("submissionID");
-		doGet(request, response);
+		response.sendRedirect("adminview");
 	}
 }
