@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ page import ="edu.wssu.pico.AdminView.UserSubmission" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -34,17 +35,17 @@
 					<!-- Data Retainer -->
 					<div>
 						<ul class="collection">
-							<% /* Event[] allEvents = (Event[]) request.getAttribute("Events");
+							<%  UserSubmission[] allSubmissions = (UserSubmission[]) request.getAttribute("Submissions");
 						        int pointer = 0;
 					            outNewLine("<tr>", out);
-					            if(allEvents != null)
+					            if(allSubmissions != null)
 					            {
-							        for(Event e : allEvents)
+							        for(UserSubmission e : allSubmissions)
 							        {
 							            if(e != null)
-							           		outNewLine("<li class=\"collection-item\"><div>" + e.getName() + " - " + e.getDate() + " - " + e.getGenre() + "<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/RamsHack2021-team-6/eventdetails?eventID=" + e.getID() + "\" class=\"secondary-content\"><i class=\"material-icons\">send</i></a></div></li>", out);
+							           		outNewLine("<li class=\"collection-item\"><div>" + e.getFirstName() + " " + e.getLastName() + " - " + e.getEmail() + "<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"adminview?submissionID=" + e.getID() + "\" class=\"secondary-content\"><i class=\"material-icons\">send</i></a></div></li>", out);
 								  	}
-					            }*/
+					            }
 						  	%>
 						</ul>
 					</div>
